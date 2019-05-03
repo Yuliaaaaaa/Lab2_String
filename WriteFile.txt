@@ -1,0 +1,25 @@
+The String s.  this class.
+Strings  constant; their v. String s. . For ex:
+
+     String str = "abc";
+
+is equivnt to:
+
+     ata[] = {'a', 'b', 'c'};
+     String str = new String(data);
+
+Here :
+
+     System.out.println("abc");
+     String ";
+     System.out.println(");
+     String (2,3);
+     String d = (1, 2);
+
+The . r class.
+
+The Js. String . String s in Java. For ication.
+
+Unless otherwise noted, p thrown.
+
+ormation). Index v.
