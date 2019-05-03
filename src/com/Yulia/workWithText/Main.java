@@ -15,7 +15,7 @@ public class Main {
         char[] firstChars = {'a', 'b', 'c'};
         char[] lastChars = {'d', 'e', 'f', 'g'};
         Symbols symbols = createSymbols(firstChars, lastChars);
-        String regex = getRegexWithSubstringsOfSymbols(symbols);
+        String regex = getRegexWithSeparateSymbols(symbols);
         String text = readTextFromFile();
         text = changeTextsSentences(text, regex);
         writeInFile(text);
@@ -26,12 +26,12 @@ public class Main {
     }
 
     public static String getRegexWithSeparateSymbols(Symbols symbols){
-        RegexHandler.generate(symbols.getBeginningSymbols(), symbols.getEndingSymbols());
+        RegexHandler.generateRegexWithSeparateSymbols(symbols.getBeginningSymbols(), symbols.getEndingSymbols());
         return RegexHandler.getRegex();
     }
 
     public static String getRegexWithSubstringsOfSymbols(Symbols symbols){
-        RegexHandler.generateAnother(symbols.getBeginningSymbols(), symbols.getEndingSymbols());
+        RegexHandler.generateRegexWithSubstringsOfSymbols(symbols.getBeginningSymbols(), symbols.getEndingSymbols());
         return RegexHandler.getRegex();
     }
 

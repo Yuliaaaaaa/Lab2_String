@@ -8,6 +8,7 @@ public class TextGenerator {
         for (int i = 0; i < sentences.length; i++) {
             text += sentences[i];
         }
+
         return text;
     }
 }
